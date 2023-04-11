@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-//Primer Ejercicio
+//First exercise
 int main() {
 	std::string nombre,direccion, hobby;
 	int edad, telefono; 
@@ -20,7 +20,7 @@ int main() {
 	std::cout << "\nTu nombre es: " << nombre;
 	std::cout << "\nTu edad es: " << edad;
 	std::cout << "\nTu telefono es: " << telefono;
-	std::cout << "\nTu dirección es: " << direccion; 
+	std::cout << "\nTu direcciÃ³n es: " << direccion; 
 	std::cout << "\nTu hobby es: " << hobby;
 
 	return 0;
