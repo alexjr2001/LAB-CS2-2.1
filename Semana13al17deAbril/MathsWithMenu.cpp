@@ -1,11 +1,12 @@
 #include<iostream>
 #include <cmath>
 
+//Menu implemented to do math operations
 int main() {
 	int num1, num2;
 	char signo;
 
-	std::cout << "Elija su operador:\na) (+) - suma\nb) (-) - resta\nc) (*) - multiplicación\nd) (/) - división\ne) (%) - residuo\nf) (~) - raíz cuadrada\n";
+	std::cout << "Elija su operador:\na) (+) - suma\nb) (-) - resta\nc) (*) - multiplicaciÃ³n\nd) (/) - divisiÃ³n\ne) (%) - residuo\nf) (~) - raÃ­z cuadrada\n";
 	std::cin >> signo;
 
 	if (signo != '~') {
@@ -41,7 +42,7 @@ int main() {
 	else {
 		std::cout << "\nIngrese un numero para la raiz cuadrada\n";
 		std::cin >> num1;
-		std::cout << "\nSu raíz cuadrada es" << sqrt(num1);
+		std::cout << "\nSu raÃ­z cuadrada es" << sqrt(num1);
 	}
 
 	return 0;
