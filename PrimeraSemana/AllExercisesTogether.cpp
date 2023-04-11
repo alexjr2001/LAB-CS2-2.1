@@ -2,7 +2,8 @@
 #include <iostream>
 #include <string>
 
-//Primer Ejercicio
+//Joining the code of the three previous exercises
+
 int main() {
 	std::string nombre, direccion, hobby;
 	int edad, telefono;
@@ -21,27 +22,25 @@ int main() {
 	std::cout << "\nTu nombre es: " << nombre;
 	std::cout << "\nTu edad es: " << edad;
 	std::cout << "\nTu telefono es: " << telefono;
-	std::cout << "\nTu dirección es: " << direccion;
+	std::cout << "\nTu direcciÃ³n es: " << direccion;
 	std::cout << "\nTu hobby es: " << hobby;
 
 	return 0;
 
 }
 
-//Segundo ejercicio
 #include <iostream>
 
 int main() {
 	double num1, num2;
 	std::cout << "Ingresa dos numeros: ";
 	std::cin >> num1 >> num2;
-	std::cout << "Suma " << num1 + num2 << "\nResta " << num1 - num2 << "\nMutiplicación " << num1 * num2 << "\nDivisión " << num1 / num2;
+	std::cout << "Suma " << num1 + num2 << "\nResta " << num1 - num2 << "\nMutiplicaciÃ³n " << num1 * num2 << "\nDivisiÃ³n " << num1 / num2;
 	std::cout << "\nRaiz numero 1 " << sqrt(num1) << "\nRaiz numero 2 " << sqrt(num2) << "\n";
 
 	return 0;
 }
 
-//Tercer ejercicio
 #include <iostream>
 
 int main() {
