@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-//First exercise
+//Learning CIN COUT
 int main() {
 	std::string nombre,direccion, hobby;
 	int edad, telefono; 
