@@ -1,5 +1,8 @@
 #include <iostream>
 
+//A TicTacToe Game for one and two players
+//In case you want to play against the PC it is going to be impossible to beat it
+
 int main() {
 	bool play = true;
 
@@ -20,7 +23,7 @@ jugar:
 	int a = (rand() % 2) + 1; //Quien va a comenzar
 	char lugar[100] = "\nLugares: \n 1) __| 2) |__| 3) |__ \n 4) __| 5) |__| 6) |__ \n 7)   | 8) |  | 9) |\n\n"; //Leyenda del tablero
 	int casilla = 0; //Lugar ingresado
-	int i = 1;  //N° TURNO DE LA PC
+	int i = 1;  //NÂ° TURNO DE LA PC
 	int jj = 0;
 	int list[] = { 1,3,5,7,2,4,6,8 };
 	int list2[] = { 4,6,8,3,7,9,1,2 };
@@ -28,8 +31,8 @@ jugar:
 	bool win = false;
 	int comienza = 1;
 	
-	std::cout << "BIENVENIDO A TRES EN RAYA\n\n"; //Menú
-	std::cout << "¿Cuantos jugadores (1 o 2)?: ";
+	std::cout << "BIENVENIDO A TRES EN RAYA\n\n"; //MenÃº
+	std::cout << "Â¿Cuantos jugadores (1 o 2)?: ";
 	std::cin >> jugadores;
 	if (jugadores == 2) {     //Multijugador
 		std::cout << "Ingrese su signo jugador 1\n";
@@ -68,7 +71,7 @@ jugar:
 		}
 		//CONTRA LA PC
 		//Imposible ganar
-		else if (jugadores == 1) {   //PC nunca perderá
+		else if (jugadores == 1) {   //PC nunca perderÃ¡
 			if (a % 2 == 1) {
 					std::cout << "\nEs su turno (" << player1 << ")\n";
 					std::cout << "\nIngrese la casilla (numero): ";
@@ -83,7 +86,7 @@ jugar:
 					}
 					i += 1;
 				}
-			else if (i > 1) {	//Los demás turnos de la PC para que no pierda
+			else if (i > 1) {	//Los demÃ¡s turnos de la PC para que no pierda
 					if ((v7 == v9 && cas7 || v2 == v5 && cas2) && win == false) {
 						if (cas8 == false && (v2 == player2 && v2 == v5 || v7 == player2 && v7 == v9)) {
 							casilla = 8;
@@ -212,7 +215,7 @@ jugar:
 				cas1 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -227,7 +230,7 @@ jugar:
 				cas2 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -242,7 +245,7 @@ jugar:
 				cas3 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -257,7 +260,7 @@ jugar:
 				cas4 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -272,7 +275,7 @@ jugar:
 				cas5 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -287,7 +290,7 @@ jugar:
 				cas6 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -302,7 +305,7 @@ jugar:
 				cas7 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -317,7 +320,7 @@ jugar:
 				cas8 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -332,7 +335,7 @@ jugar:
 				cas9 = true;
 			}
 			else {
-				std::cout << "Ya está ese valor, intentelo de nuevo";
+				std::cout << "Ya estÃ¡ ese valor, intentelo de nuevo";
 				a -= 1;
 			}
 			break;
@@ -349,22 +352,22 @@ jugar:
 		std::cout << "\t\t\t\tTRES EN RAYA\n\n";
 		std::cout << tabla1 << v1 << tabla2 << v2 << tabla2 << v3 << "\n" << tabla3 << v4 << tabla2 << v5 << tabla2 << v6 << "\n" << tabla3 << v7 << tabla2 << v8 << tabla2 << v9 << "\n" << tabla4;
 
-		//Verificar si alguien ganó
+		//Verificar si alguien ganÃ³
 		if (cas1 == true && v1 == v2 && v2 == v3 || cas1 == true && v1 == v5 && v5 == v9 || cas1 == true && v1 == v4 && v1 == v7 || cas2 == true && v2 == v5 && v5 == v8 || cas6 == true && v3 == v6 && v6 == v9 || cas3 == true && v3 == v5 && v5 == v7 || cas7 == true && v7 == v8 && v8 == v9 || cas5 == true && v4 == v5 && v5 == v6) {
 			if (jugadores == 1) {
 				if (a % 2 == 1) {
-					std::cout << "Ganó jugador 1";
+					std::cout << "GanÃ³ jugador 1";
 				}
 				else {
-					std::cout << "Ganó PC";
+					std::cout << "GanÃ³ PC";
 				}
 			}
 			else {
 				if (a % 2 == 1) {
-					std::cout << "Ganó jugador 1";
+					std::cout << "GanÃ³ jugador 1";
 				}
 				else {
-					std::cout << "Ganó jugador 2";
+					std::cout << "GanÃ³ jugador 2";
 				}
 			}
 			play = false;
