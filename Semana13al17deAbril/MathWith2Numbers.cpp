@@ -2,18 +2,18 @@
 int main() {
 	int num1, num2;
 
-	std::cout << "Ingrese dos números enteros:\n";
+	std::cout << "Ingrese dos nÃºmeros enteros:\n";
 	std::cin >> num1 >> num2;
 
 	std::cout << "\nSu suma es: " << num1 + num2;
 	std::cout << "\nLa resta entre el primer y segundo es " << num1 - num2;
 	std::cout << "\nLa multiplicacion es: " << num1 * num2;
 	if (num2 != 0) {
-		std::cout << "\nLa división es: " << num1 / num2;
-		std::cout << "\nEl residuo de la división es " << num1 % num2;
+		std::cout << "\nLa divisiÃ³n es: " << num1 / num2;
+		std::cout << "\nEl residuo de la divisiÃ³n es " << num1 % num2;
 	}
 	else {
-		std::cout << "\nNo se puede hacer una división con divisor 0";
+		std::cout << "\nNo se puede hacer una divisiÃ³n con divisor 0";
 	}
 
 
@@ -31,7 +31,7 @@ int main() {
 
 	if (num2 != 0 && num1!=0) {
 		if (num1 % num2 == 0 || num2 % num1 == 0) {
-			std::cout << "\nUn número es divisor del otro";
+			std::cout << "\nUn nÃºmero es divisor del otro";
 		}
 		else {
 			std::cout << "\nNinguno de los dvisores es divisor del otro";
