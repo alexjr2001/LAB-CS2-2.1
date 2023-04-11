@@ -1,4 +1,6 @@
 #include <iostream>
+
+//Different mathematical operations with two numbers
 int main() {
 	int num1, num2;
 
