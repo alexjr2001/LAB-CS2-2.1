@@ -1,5 +1,6 @@
 #include <iostream>
 
+//Finding areas of geometric figures
 int main(){
 	double radio,base,altura, lado;
 	std::string fig;
