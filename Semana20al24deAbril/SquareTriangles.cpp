@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
 
+//Finding out if the entered triangle is a squaretriangle or not
 int main() {
 	double l1, l2, l3, h;
 	double a1, a2;
@@ -26,7 +27,7 @@ int main() {
 
 
 	if (l2 + l1 + l3<= 0) {                                                     //Comprobar datos
-		std::cout << "Ingrese al menos dos datos,inténtelo de nuevo\n";
+		std::cout << "Ingrese al menos dos datos,intÃ©ntelo de nuevo\n";
 		if (a1 > 0 && a2 > 0) {
 			std::cout << "E ingrese al menos un lado\n";
 			if (a1 + a2 > 90) {
@@ -53,12 +54,12 @@ int main() {
 
 		if (a1+a2>90 && a1<90 && a2<90|| a1 > 0 && a2 > 0 && a1+a2!=90) {						//Si ingresa angulos erroneos
 			a1 = 90 - a2;
-			std::cout << "Has ingresado angulos incorrectos pero el resultado más próximo es el siguiente: \n";	
+			std::cout << "Has ingresado angulos incorrectos pero el resultado mÃ¡s prÃ³ximo es el siguiente: \n";	
 		}
 		else if (a1 >= 90 || a2 >= 90) {
 			a1 = 89;
 			a2 = 1;
-			std::cout << "Has ingresado angulos incorrectos pero el resultado más próximo es el siguiente: \n";
+			std::cout << "Has ingresado angulos incorrectos pero el resultado mÃ¡s prÃ³ximo es el siguiente: \n";
 		}
 
 		//LADOS
@@ -85,7 +86,7 @@ int main() {
 			l2 = sqrt(var);
 		}
 
-		//Ángulos
+		//Ãngulos
 		if (a1 <= 0 && a2 <= 0) {
 			x = l1 * 100 / (l2 + l1);
 			a1 = 90 * x / 100;
@@ -171,7 +172,7 @@ int main() {
 			}
 		}
 		else {
-			std::cout << "No es triangulo cuadrado\n" << "Pero los valores más cercanos para que lo sea son los siguientes\n";
+			std::cout << "No es triangulo cuadrado\n" << "Pero los valores mÃ¡s cercanos para que lo sea son los siguientes\n";
 			newVar = l2 * l2 + l1 * l1;
 			h = sqrt(newVar);
 			goto NuevosValores;     //Para no repetir el mismo codigo
